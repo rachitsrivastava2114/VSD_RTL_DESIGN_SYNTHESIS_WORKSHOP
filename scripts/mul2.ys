@@ -1,0 +1,7 @@
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog mult_2.v
+synth -top mul2
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog -noattr synth_mul2.v
+stat -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib

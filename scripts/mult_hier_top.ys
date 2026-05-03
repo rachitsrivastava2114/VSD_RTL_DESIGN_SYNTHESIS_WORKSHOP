@@ -1,0 +1,8 @@
+#top-level hierarchical synthesis
+read_verilog multiple_modules.v
+synth -top multiple_modules
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show multiple_modules
+write_verilog -noattr synth_m_hier.v
+stat -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
