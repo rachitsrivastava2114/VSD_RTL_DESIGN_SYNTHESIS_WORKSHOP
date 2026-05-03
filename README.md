@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://www.vlsisystemdesign.com/wp-content/uploads/2016/12/vsd_logo.jpg" alt="VSD Logo" width="200"/>
-</p>
-
 <h1 align="center">VSD_RTL_DESIGN_SYNTHESIS_WORKSHOP</h1>
 
 <p align="center">
